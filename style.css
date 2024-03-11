@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: rgb(227, 105, 105);
+  padding: 7px 20px;
+  border: 2px solid #255;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: colorAnimation 5s linear 2s infinite alternate;
+}
+
+.navigation {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.navigation a:hover {
+  color: red;
+}
+
+.Box {
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 7px 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: rgb(0, 255, 55);
+  border: 2px solid rgb(0, 255, 55);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.Box:hover {
+  color: aliceblue;
+  outline: 2px solid greenyellow;
+}
+
+.Home {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+  background: url("./img/hh.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  padding: 20px 80px;
+  background-position-x: 50rem;
+  background-position-y: 1rem;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.done {
+  background: url("./img//yoyo22-png.png");
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position-x: 50rem;
+  background-position-y: 1rem;
+}
+
+.Contact {
+  margin-top: 17%;
+}
+
+.Contact h2 {
+  font-size: 2.5em;
+}
+
+.Contact h2 span {
+  color: red;
+  cursor: pointer;
+}
+
+.Contact h4 {
+  font-size: 2.5em;
+  padding: 15px 0px;
+}
+
+.Contact p {
+  width: 55%;
+  padding: 5px 0px;
+  font-weight: 900;
+}
+
+.btn-group {
+  margin-top: 3%;
+}
+
+.btn-group a {
+  text-decoration: none;
+  background-color: blue;
+  padding: 10px 30px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.btn-group a:nth-child(1) {
+  margin-right: 2%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.btn-group a:nth-child(2) {
+  background-color: transparent;
+  color: blue;
+  box-shadow: rgb(0, 255, 251) 35px 25px 35px -10px;
+}
+
+.btn-group a:nth-child(2):hover {
+  color: white;
+  background-color: blue;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 50px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2%;
+  margin-right: 2px;
+  outline: 2px solid rgb(93, 93, 218);
+  background-color: rgb(93, 93, 218);
+  transition: 0.3s ease-in;
+}
+
+.social-icons a img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.social-icons a:nth-child(1) {
+  padding-top: 1%;
+}
+
+.social-icons a:nth-child(2) {
+  padding-top: 1%;
+}
+
+.social-icons a:hover {
+  transform: translateY(-7px);
+}
+
+@keyframes colorAnimation {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: rgb(3, 248, 3);
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: rgb(143, 2, 244);
+  }
+  60% {
+    color: rgb(240, 4, 240);
+  }
+  70% {
+    color: pink;
+  }
+  80% {
+    color: purple;
+  }
+  90% {
+    color: cyan;
+  }
+  100% {
+    color: aqua;
+  }
+}
